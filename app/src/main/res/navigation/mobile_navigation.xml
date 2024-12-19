@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_liststory">
+
+    <fragment
+        android:id="@+id/navigation_liststory"
+        android:name="com.permata.mystoryyapp.ui.listaddstory.utamaliststory.ListStoryFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_liststory" >
+        <action android:id="@+id/action_liststoryFragment_to_detailFragment"
+            app:destination="@id/detailFragmentListStory"/>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragmentListStory"
+        android:name="com.permata.mystoryyapp.ui.listaddstory.detailliststory.DetailListStoryFragment"
+        android:label="Event Details"
+        tools:layout="@layout/fragment_detail_list_story">
+        <argument
+            android:name="storyId"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_addstory"
+        android:name="com.permata.mystoryyapp.ui.addstory.AddStoryFragment"
+        android:label="@string/title_addstory"
+        tools:layout="@layout/fragment_addstory" />
+
+    <fragment
+        android:id="@+id/navigation_location"
+        android:name="com.permata.mystoryyapp.ui.location.MapsFragment"
+        android:label="@string/title_location"
+        tools:layout="@layout/fragment_maps">
+        <action android:id="@+id/action_location_to_detailFragment"
+            app:destination="@id/detailFragmentListStory">
+            <argument
+                android:name="storyId"
+                app:argType="string" />
+        </action>
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.permata.mystoryyapp.ui.profile.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+</navigation>

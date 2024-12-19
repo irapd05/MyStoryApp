@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.motion.widget.MotionLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layoutDescription="@xml/activity_welcome_scene"
+    tools:context=".ui.authentication.welcome.WelcomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/aestorylogo"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="2dp" />
+
+    <ImageView
+        android:id="@+id/logo1"
+        android:layout_width="551dp"
+        android:layout_height="325dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo1"
+        tools:layout_editor_absoluteX="267dp" />
+
+    <TextView
+        android:id="@+id/titlelogo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/desk_1"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logo1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/logo1"
+        app:layout_constraintTop_toBottomOf="@id/logo1"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="822dp" />
+
+    <TextView
+        android:id="@+id/descTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/desktam_1"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/titlelogo"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titlelogo"
+        app:layout_constraintTop_toBottomOf="@+id/titlelogo"
+        app:layout_constraintVertical_bias="0.054"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/logo2"
+        android:layout_width="551dp"
+        android:layout_height="325dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/logo2"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/titlelogo2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/desk2"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logo2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/logo2"
+        app:layout_constraintTop_toBottomOf="@id/logo2"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/descTextView2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/des2"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/titlelogo2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titlelogo2"
+        app:layout_constraintTop_toBottomOf="@+id/titlelogo2"
+        app:layout_constraintVertical_bias="0.054"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/logo3"
+        android:layout_width="551dp"
+        android:layout_height="325dp"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/gamba1welcome"
+        tools:layout_editor_absoluteX="267dp"
+        tools:layout_editor_absoluteY="119dp" />
+
+    <TextView
+        android:id="@+id/titlelogo3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/nameapp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/logo3"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/logo3"
+        app:layout_constraintTop_toBottomOf="@id/logo3" />
+
+    <TextView
+        android:id="@+id/descTextView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:gravity="center"
+        android:text="@string/message_welcome_page"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/titlelogo3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/titlelogo3"
+        app:layout_constraintTop_toBottomOf="@+id/titlelogo3" />
+
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="345dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:backgroundTint="@color/cream"
+        android:gravity="center"
+        android:text="@string/started"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/descTextView3"
+        app:layout_constraintStart_toStartOf="@+id/descTextView3"
+        app:layout_constraintTop_toBottomOf="@+id/titlelogo3"
+        app:layout_constraintVertical_bias="0.265" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu1"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        app:altSrc="@drawable/baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/menu3"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toEndOf="@+id/menu2"
+        app:srcCompat="@drawable/outline_circle_24"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="44dp"
+        app:altSrc="@drawable/baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/outline_circle_24"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:id="@+id/menu3"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="96dp"
+        app:altSrc="@drawable/baseline_circle_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/outline_circle_24"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
